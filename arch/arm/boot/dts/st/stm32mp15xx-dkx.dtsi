@@ -655,7 +655,7 @@
 &timers3 {
 	/delete-property/dmas;
 	/delete-property/dma-names;
-	status = "disabled";
+	status = "okay";
 	counter {
 		status = "okay";
 	};
@@ -673,7 +673,7 @@
 &timers4 {
 	/delete-property/dmas;
 	/delete-property/dma-names;
-	status = "disabled";
+	status = "okay";
 	counter {
 		status = "okay";
 	};
@@ -691,7 +691,7 @@
 &timers5 {
 	/delete-property/dmas;
 	/delete-property/dma-names;
-	status = "disabled";
+	status = "okay";
 	counter {
 		status = "okay";
 	};
