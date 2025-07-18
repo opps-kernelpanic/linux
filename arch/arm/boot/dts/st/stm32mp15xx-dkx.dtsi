@@ -695,7 +695,7 @@
 	counter {
 		status = "okay";
 	};
-	pwm {
+	pwm5: pwm {
 		pinctrl-0 = <&pwm5_pins_a>;
 		pinctrl-1 = <&pwm5_sleep_pins_a>;
 		pinctrl-names = "default", "sleep";
