@@ -44,4 +44,16 @@
 		>;
 		default-brightness-level = <100>;
 	};
+
+	vibrator_l {
+		compatible = "pwm-vibrator";
+		pwms = <&pwm3 1 50000 0>;
+		pwm-names = "vibrator_l";
+	};
+
+	vibrator_r {
+		compatible = "pwm-vibrator";
+		pwms = <&pwm4 1 50000 0>;
+		pwm-names = "vibrator_r";
+	};
 };
