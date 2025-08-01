@@ -2303,6 +2303,13 @@
 		};
 	};
 
+	tiopt3001_pins_a: tiopt3001-0 {
+		pins {
+			pinmux = <STM32_PINMUX('F', 3, GPIO)>;
+			bias-pull-up;
+		};
+	};
+
 	uart4_pins_a: uart4-0 {
 		pins1 {
 			pinmux = <STM32_PINMUX('G', 11, AF6)>; /* UART4_TX */

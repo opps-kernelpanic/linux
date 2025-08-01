@@ -270,6 +270,16 @@
 		};
 	};
 
+	light-sensor@44 {
+		compatible = "ti,opt3001";
+		reg = <0x44>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&tiopt3001_pins_a>;
+		interrupts = <3 IRQ_TYPE_EDGE_FALLING>;
+		interrupt-parent = <&gpiof>;
+		status = "okay";
+    };
+
 	cs42l51: cs42l51@4a {
 		compatible = "cirrus,cs42l51";
 		reg = <0x4a>;
