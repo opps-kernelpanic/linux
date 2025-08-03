@@ -506,8 +506,8 @@
 	/delete-property/dma-names;
 	status = "okay";
 
-	mpu9250: imu@68 {
-		compatible = "invensense,mpu9250";
+	mpu6500: imu@68 {
+		compatible = "invensense,mpu6500";
 		reg = <0x68>;
 	};
 
