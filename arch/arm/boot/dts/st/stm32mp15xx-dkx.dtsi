@@ -505,6 +505,11 @@
 	/delete-property/dmas;
 	/delete-property/dma-names;
 	status = "okay";
+
+	bmp280: pressure@76 {
+		compatible = "bosch,bmp280";
+		reg = <0x76>;
+	};
 };
 
 &i2s2 {
