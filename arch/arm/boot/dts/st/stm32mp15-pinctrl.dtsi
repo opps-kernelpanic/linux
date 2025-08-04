@@ -2310,6 +2310,13 @@
 		};
 	};
 
+	w5500_pins_a: w5500-0 {
+		pins {
+			pinmux = <STM32_PINMUX('F', 4, GPIO)>;
+			bias-pull-up;
+		};
+	};
+
 	uart4_pins_a: uart4-0 {
 		pins1 {
 			pinmux = <STM32_PINMUX('G', 11, AF6)>; /* UART4_TX */

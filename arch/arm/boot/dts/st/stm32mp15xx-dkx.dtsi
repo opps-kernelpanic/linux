@@ -651,6 +651,17 @@
 	pinctrl-0 = <&spi5_pins_a>;
 	pinctrl-1 = <&spi5_sleep_pins_a>;
 	status = "okay";
+	cs-gpios= <&gpiof 6 GPIO_ACTIVE_LOW>;
+
+	ethernet1: w5500@0 {
+		compatible = "wiznet,w5500";
+		reg = <0>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&w5500_pins_a>;
+		interrupt-parent = <&gpiof>;
+		interrupts = <4 IRQ_TYPE_EDGE_FALLING>;
+		spi-max-frequency = <30000000>;
+	};
 };
 
 &timers1 {
