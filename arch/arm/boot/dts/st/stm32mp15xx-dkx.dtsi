@@ -650,7 +650,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&spi5_pins_a>;
 	pinctrl-1 = <&spi5_sleep_pins_a>;
-	status = "disabled";
+	status = "okay";
 };
 
 &timers1 {
